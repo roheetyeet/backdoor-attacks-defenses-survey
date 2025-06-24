@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CS360 Research Paper – “Threats and Defenses of Backdoor Attacks in ML”
+% Rohit Joshi & Turag Ikbal – Spring 2024
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[sigconf,authorversion,nonacm,balance=false]{acmart}
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+\setcopyright{none}
+\acmConference[COMPSCI 360]{Computer Security}{Spring 2024}{Amherst, MA}
+\settopmatter{printacmref=false}
+
+% ---------- packages you’ll likely need ----------
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{amsmath,amsthm}
+\usepackage{array}
+\usepackage{dsfont}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{xspace}
+
+% ---------- convenience macros ----------
+\newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+
+\begin{document}
+\title{Threats \& Defenses of Backdoor Attacks in Machine Learning}
+
+\author{Rohit Joshi}
+\email{rjoshi@umass.edu}
+\affiliation{\institution{University of Massachusetts Amherst}\city{Amherst}\state{MA}\country{USA}}
+
+\author{Turag Ikbal}
+\email{taikbal@umass.edu}
+\affiliation{\institution{University of Massachusetts Amherst}\city{Amherst}\state{MA}\country{USA}}
+
+\begin{abstract}
+% 150–175 words – write this last.
+\end{abstract}
+
+\keywords{machine-learning security, data poisoning, backdoor attacks, federated learning}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}\label{sec:intro}
+% 0.5 page
+% – Motivation: stealthy data-poisoning makes ML systems unsafe.
+% – Real-world stakes (autonomous driving, malware detection, medical AI).
+% – Research questions (RQ1–RQ4) you outlined in your notes.
+% – Summary of contributions (taxonomy, defence survey, FL case study).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background}\label{sec:background}
+% 0.5 page
+\subsection{Data Poisoning vs.\ Backdoor Attacks}
+\subsection{Threat Model and Assumptions}
+\subsection{Federated Learning 101 (for Case Study)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Landscape of Backdoor Attack Methodologies}\label{sec:attacks}
+% 1.0 page
+\subsection{Static Trigger Attacks}\label{sec:static}
+\subsection{Dynamic / Programmable Triggers}\label{sec:dynamic}
+\subsection{Transfer-Learning / Model-Reuse Backdoors}\label{sec:reuse}
+\subsection{Domain-Specific Backdoors (Malware, Vision \& NLP)}\label{sec:domain}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Defence Strategies}\label{sec:defence}
+% 1.0 page
+\subsection{Data Sanitisation and Anomaly Detection}
+\subsection{Robust Training Objectives}
+\subsection{Post-training Detection \& Model Sanitisation}
+\subsection{Federated-learning Specific Approaches}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Case Study: Backdoors in Federated Learning}\label{sec:fl}
+% 0.7 page
+\subsection{Distributed Backdoor Attack (Zeno++, MCFL)}
+\subsection{FedDefender and Mode-Connectivity Mitigations}
+\subsection{Empirical Snapshot of Current Efficacy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Challenges \& Future Directions}\label{sec:future}
+% 0.5 page
+\subsection{Adaptive Adversaries \& Clean-Label Attacks}
+\subsection{Scalability and Compute Overhead}
+\subsection{Benchmarking \& Reproducibility Gaps}
+\subsection{Ethical, Legal \& Regulatory Dimensions}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}\label{sec:conclusion}
+% 0.3 page
+% – concise recap, actionable take-aways, call for robust-by-design ML.
+
+% --------------------------------------------------------------------------
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\end{document}
