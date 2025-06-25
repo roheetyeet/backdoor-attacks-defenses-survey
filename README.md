@@ -6,6 +6,10 @@ This repository contains the research paper and corresponding LaTeX source code 
 
 **[➡️ View the Full Research Paper (PDF)](https://drive.google.com/file/d/1Kg4EjXJtlodbsPLTIkcdTLqTY3EsOfGj/view?usp=drive_link)**
 
+**[➡️ View the Paper on ResearchGate](https://www.researchgate.net/publication/393019183_Threats_and_Defenses_of_Backdoor_Attacks_in_Machine_Learning)**
+
+- DOI: 10.13140/RG.2.2.31657.10085
+
 ---
 
 ## Abstract
